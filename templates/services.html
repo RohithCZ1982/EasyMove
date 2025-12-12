@@ -24,7 +24,7 @@
 
         <div style="margin-top: 30px;">
             <button class="btn btn-success" onclick="showAddServiceForm()">Add Custom Service</button>
-            <button class="btn" onclick="getAISuggestions()">🤖 Get AI Suggestions</button>
+            <button class="btn" onclick="getAISuggestions()">Get AI Suggestions</button>
         </div>
 
         <div id="ai-suggestions"></div>
@@ -399,7 +399,7 @@ async function getAISuggestions() {
         
         if (result.suggestions) {
             const container = document.getElementById('ai-suggestions');
-            container.innerHTML = '<div class="ai-suggestion"><h4>🤖 AI Suggestions</h4>';
+            container.innerHTML = '<div class="ai-suggestion"><h4>AI Suggestions</h4>';
             
             result.suggestions.forEach(suggestion => {
                 const btn = document.createElement('span');
